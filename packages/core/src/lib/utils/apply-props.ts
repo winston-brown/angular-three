@@ -17,6 +17,7 @@ function checkNeedsUpdate(value: unknown) {
 }
 
 export function applyProps(instance: NgtInstance, props: UnknownRecord) {
+  console.log("PROPS ::::::::::::: ", props);
   if (!Object.keys(props).length) return;
 
   if ('__ngt' in props) {
